@@ -32,7 +32,7 @@ class Calc:
         self.total_lbl, self.lbl = self.create_display_lbls()
 
         self.radical_btn = tk.Button(self.btnframe, text="√", bg=OFF_WHITE,
-                                     fg=LBL_COLOR, font=DEFAULT_FONT_STYLE, borderwidth=0)
+                                     fg=LBL_COLOR, font=DEFAULT_FONT_STYLE, borderwidth=0, command=self.sqrt)
         self.radical_btn.grid(row=0, column=2, sticky=tk.NSEW)
 
         self.power_btn = tk.Button(self.btnframe, text="^", bg=OFF_WHITE,
